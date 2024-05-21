@@ -1,0 +1,128 @@
+
+CREATE TABLE `agendar_cita` (
+  `id_cita` int NOT NULL,
+  `id_tipo_documento` varchar(45) DEFAULT NULL,
+  `num_documento` varchar(45) DEFAULT NULL,
+  `correo` varchar(45) DEFAULT NULL,
+  `num_ficha` varchar(45) DEFAULT NULL,
+  `id_clasificacion_evento` varchar(45) DEFAULT NULL,
+  `asunto` varchar(45) DEFAULT NULL,
+  `fecha` varchar(45) DEFAULT NULL,
+  `miembro_bienestar` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_cita`)
+);
+
+CREATE TABLE `cargo` (
+  `id_cargo` int NOT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_cargo`)
+);
+
+CREATE TABLE `clasificacion_evento` (
+  `id_clasificacion_evento` int NOT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_clasificacion_evento`)
+) ;
+
+
+CREATE TABLE `crear_evento` (
+  `id_evento` int NOT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  `descripcion` varchar(45) DEFAULT NULL,
+  `f_evento` varchar(45) DEFAULT NULL,
+  `aforo` varchar(45) DEFAULT NULL,
+  `fecha_evento` varchar(45) DEFAULT NULL,
+  `hora_evento` varchar(45) DEFAULT NULL,
+  `fecha_i_inscripcion` varchar(45) DEFAULT NULL,
+  `fecha_f_inscripcion` varchar(45) DEFAULT NULL,
+  `lugar` varchar(45) DEFAULT NULL,
+  `f_lugar` varchar(45) DEFAULT NULL,
+  `id_clasificacion_evento` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_evento`)
+) ;
+
+
+CREATE TABLE `eventos` (
+  `id_evento` int NOT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  `fecha` varchar(45) DEFAULT NULL,
+  `hora` varchar(45) DEFAULT NULL,
+  `lugar` varchar(45) DEFAULT NULL,
+  `aforo` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_evento`)
+);
+
+
+CREATE TABLE `formulario_apoyo` (
+  `id_formulario_apoyo` int NOT NULL,
+  `nombre_apoyo` varchar(45) DEFAULT NULL,
+  `primer_nombre` varchar(45) DEFAULT NULL,
+  `segundo_nombre` varchar(45) DEFAULT NULL,
+  `primer_apellido` varchar(45) DEFAULT NULL,
+  `segundo_apellido` varchar(45) DEFAULT NULL,
+  `id_tipo_documento` varchar(45) DEFAULT NULL,
+  `num_documento` varchar(45) DEFAULT NULL,
+  `correo` varchar(45) DEFAULT NULL,
+  `f_firma_acudiente` varchar(45) DEFAULT NULL,
+  `f_firma_digital` varchar(45) DEFAULT NULL,
+  `f_documento_identidad` varchar(45) DEFAULT NULL,
+  `f_sisben` varchar(45) DEFAULT NULL,
+  `f_soportes_vulnerables` varchar(45) DEFAULT NULL,
+  `f_factura_servicio_publico` varchar(45) DEFAULT NULL,
+  `id_clasificacion_evento` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_formulario_apoyo`)
+);
+
+
+CREATE TABLE `formulario_evento` (
+  `id_formulario` int NOT NULL,
+  `primer_nombre` varchar(45) DEFAULT NULL,
+  `segundo_nombre` varchar(45) DEFAULT NULL,
+  `primer_apellido` varchar(45) DEFAULT NULL,
+  `segundo_apellido` varchar(45) DEFAULT NULL,
+  `correo` varchar(45) DEFAULT NULL,
+  `telefono` varchar(45) DEFAULT NULL,
+  `programa_formacion` varchar(45) DEFAULT NULL,
+  `num_ficha` varchar(45) DEFAULT NULL,
+  `id_jornada` varchar(45) DEFAULT NULL,
+  `id_clasificacion_evento` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_formulario`)
+) ;
+
+
+CREATE TABLE `jornada_formacion` (
+  `id_jornada` int NOT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_jornada`)
+) ;
+
+
+CREATE TABLE `tipo_documento` (
+  `id_tipo_documento` int NOT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_tipo_documento`)
+) ;
+
+
+CREATE TABLE `tipo_sangre` (
+  `id_tipo_sangre` int NOT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_tipo_sangre`)
+) ;
+
+
+CREATE TABLE `usuario` (
+  `id_usuario` int NOT NULL,
+  `primer_nombre` varchar(45) DEFAULT NULL,
+  `segundo_nombre` varchar(45) DEFAULT NULL,
+  `primer_apellido` varchar(45) DEFAULT NULL,
+  `segundo_apellido` varchar(45) DEFAULT NULL,
+  `id_tipo_documento` varchar(45) DEFAULT NULL,
+  `cedula` varchar(45) DEFAULT NULL,
+  `telefono` varchar(45) DEFAULT NULL,
+  `correo` varchar(45) DEFAULT NULL,
+  `id_tipo_sangre` varchar(45) DEFAULT NULL,
+  `contraseña` varchar(45) DEFAULT NULL,
+  `id_rol` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_usuario`)
+) 

@@ -1,0 +1,109 @@
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgb(47,0,255);
+    background: linear-gradient(90deg, rgba(47,0,255,1) 7%, rgba(0,212,255,1) 91%); 
+}
+  
+.logo img {
+    height: 50px; /* Ajustar el tamaño del logo según necesites */
+}
+  
+nav {
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+nav a {
+    text-decoration: none;
+    color: #343a40;
+}
+  
+  /* Estilos para el perfil de usuario */
+.perfil-usuario {
+    /* Estilos del perfil de usuario */
+}
+  
+  /* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+  
+  /* Estilos para el título de eventos */
+#eventos h1 {
+    text-align: center;
+  }
+  
+  /* Estilos para el slider */
+  .slider-container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid #2f00ff; /* Añadir marco alrededor del slider */
+    border-radius: 10px; /* Añadir bordes redondeados al marco */
+  }
+  
+  .slider {
+    display: flex;
+  }
+  
+  .slider img {
+    width: 100%;
+    display: none;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    background-color: #2f00ff; /* Color de fondo de los botones */
+    border-radius: 40%; /* Hacer los botones redondos */
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: #3fefff; /* Color de fondo de los botones al pasar el ratón */
+  }
+  
+  
+  
+  
+  /* Estilos para la información del evento */
+  .info-evento {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para la sección de comentarios */
+  .comentarios {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para el footer */
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .redes-sociales {
+    /* Estilos de los iconos de redes sociales */
+  }
+  

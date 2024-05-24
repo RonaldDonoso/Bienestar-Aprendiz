@@ -1,20 +1,37 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 header {
     text-align: center;
-    padding: 20px;
-    background: rgb(47,0,255);
-    background: linear-gradient(90deg, rgba(47,0,255,1) 7%, rgba(0,212,255,1) 91%); 
+    padding: 5px;
+    background: #ffffff; 
+    color: #0ed33f;
 }
 
-.logo img {
-    max-height: 50px;
+.logo {
+  height: 80px; /* Ajustar el tamaño del logo según necesites */
+  position: absolute;
+  left: 3%; /* Lo colocará en el lado izquierdo */
 }
+
+  
+nav {
+    background-color: #0ed33f;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-weight: bold; /* Aplica negrita al texto del logo */
+  }
+nav a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+.logo {
+    height: 80px; /* Ajustar el tamaño del logo según necesites */
+    position: absolute;
+    left: 3%; /* Lo colocará en el lado izquierdo */
+  }
 
 .imagen-equipo {
     display: flex;
@@ -28,21 +45,11 @@ header {
     max-height: 100%;
 }
 
-nav {
-    background-color: #e9ecef;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-  }
-nav a {
-    text-decoration: none;
-    color: #343a40;
-}
-
 .perfil-usuario {
     /* Estilos para el perfil de usuario */
 }
 
+/* Estilos para el contenido principal */
 main {
     padding: 20px;
 }
@@ -51,8 +58,9 @@ section {
     text-align: center; 
 }
 
-h1 {
-    margin-top: 0;
+/* Estilos para el título de eventos */
+#quienes_somos h1 {
+    text-align: center;
 }
 
 
@@ -60,14 +68,13 @@ h1 {
     max-width: 100%;
 }
 
-.redes-sociales a {
-    text-decoration: none;
-    color: #343a40;
-    margin-right: 10px;
-}
-
+/* Estilos para el footer */
 footer {
     background-color: #f8f9fa;
+    padding: 20px;
     text-align: center;
-    padding: 10px;
+}
+  
+.redes-sociales {
+    /* Estilos de los iconos de redes sociales */
 }

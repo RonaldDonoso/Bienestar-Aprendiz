@@ -1,40 +1,47 @@
-body {
-    font-family: Arial, sans-serif;
-  }
-  header {
-    text-align: center;
-    padding: 20px;
-    background: rgb(47,0,255);
-    background: linear-gradient(90deg, rgba(47,0,255,1) 7%, rgba(0,212,255,1) 91%); 
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff; 
+  color: #0ed33f;
 }
-  nav {
-    background-color: #e9ecef;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-  }
-  nav a {
-    text-decoration: none;
-    color: #343a40;
-  }
-  main {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  section {
-    flex-basis: 30%;
-    margin-right: 10px;
-  }
-  section h2 {
-    margin-top: 0;
-  }
-  section p {
-    margin-bottom: 0;
-  }
-  footer {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 10px;
-  }
+nav {
+  background-color: #0ed33f;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-weight: bold; /* Aplica negrita al texto del logo */
+}
+nav a {
+  text-decoration: none;
+  color: #343a40;
+}
+
+.logo {
+  height: 80px; /* Ajustar el tamaño del logo según necesites */
+  position: absolute;
+  left: 3%; /* Lo colocará en el lado izquierdo */
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+section {
+  flex-basis: 30%;
+  margin-right: 10px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+section p {
+  margin-bottom: 0;
+}
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 10px;
+}
   

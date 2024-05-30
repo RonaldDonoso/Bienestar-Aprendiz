@@ -3,7 +3,7 @@ header {
     text-align: center;
     padding: 5px;
     background: #ffffff; 
-    color: #0ed33f;
+    color: #08ac04;
 }
 
 .logo {
@@ -14,7 +14,7 @@ header {
 
   
 nav {
-    background-color: #0ed33f;
+    background-color: #08ac04;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     display: flex;
     justify-content: space-around;
@@ -23,7 +23,7 @@ nav {
   }
 nav a {
     text-decoration: none;
-    color: #343a40;
+    color: #ffffff;
 }
 
 .imagen-equipo {

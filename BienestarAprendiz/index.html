@@ -1,42 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Bienestar al Aprendiz</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos</title>
+  <link rel="stylesheet" href="eventos.css">
 </head>
 <body>
-  <header>
-    <img class="logo" src="img/logo1.png" alt="Logo">
-    <h1>Bienestar al Aprendiz</h1>
-  </header>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="apoyos.html">Apoyos</a>
-    <a href="eventos.html">Eventos</a>
-    <a href="transporte.html">Transporte</a>
-    <a href="quienes_somos.html">Quienes Somos</a>
-  </nav>
+    <header>
+        <img class="logo" src="img/logo1.png" alt="Logo">
+        <h1>Bienestar al Aprendiz</h1>
+      </header>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="apoyos.html">Apoyos</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="transporte.html">Transporte</a>
+        <a href="quienes_somos.html">Quienes Somos</a>
+      </nav>
+
   <main>
-    <section id="servicios">
-      <h2>Servicios</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </section>
-    <section id="apoyos">
-      <h2>Apoyos</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </section>
     <section id="eventos">
-      <h2>Eventos</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </section>
-    <section id="transporte">
-      <h2>Transporte</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h1>Eventos</h1>
+      
+      <div class="slider-container">
+        <div class="slider">
+          <img src="img/evento1.jpg" alt="Image 1">
+          <img src="img/evento2.png" alt="Image 2">
+          <img src="img/evento3.jpg" alt="Image 3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      
+      <div class="info-evento">
+        <p>Fecha: XX/XX/XXXX</p>
+        <p>Lugar: Nombre del lugar</p>
+      </div>
+      <div class="comentarios">
+        <!-- Sección de comentarios -->
+        <p>Nombre: XXXXXXXX XXXXXXXXXXXX</p>
+        <p>Fecha: XX/XX/XXXX</p>
+        <p>Comentario: Hola sena</p>
+      </div>
     </section>
   </main>
+
   <footer>
-    <p> © 2024 Bienestar al Aprendiz</p>
+    <div class="redes-sociales">
+      <a href="#"><img src="img/facebook2.png" alt="Facebook" width="40px" height="40px"></a>
+      <a href="#"><img src="img/twitter2.png" alt="Twitter" width="40px" height="40px"></a>
+      <a href="#"><img src="img/instagram2.png" alt="Instagram" width="40px" height="40px"></a>
+  </div>
   </footer>
+
+
 </body>
 </html>
+
+<script src="eventos.js"></script>

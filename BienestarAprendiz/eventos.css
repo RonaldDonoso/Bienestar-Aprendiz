@@ -1,3 +1,8 @@
+
+body{
+  font-family: calibri, sans-serif;
+}
+
 /* Estilos para el encabezado */
 header {
     text-align: center;
@@ -26,10 +31,6 @@ nav a {
     color: #ffffff;
 }
   
-  /* Estilos para el perfil de usuario */
-.perfil-usuario {
-    /* Estilos del perfil de usuario */
-}
   
   /* Estilos para el contenido principal */
 main {
@@ -44,11 +45,11 @@ main {
   /* Estilos para el slider */
   .slider-container {
     position: relative;
-    max-width: 550px;
+    max-width: 70%;
     margin: 0 auto;
     overflow: hidden;
-    border: 2px solid #09bb03; /* Añadir marco alrededor del slider */
-    border-radius: 10px; /* Añadir bordes redondeados al marco */
+    /* border: 2px solid #09bb03;  Añadir marco alrededor del slider  */
+    /* border-radius: 10px; Añadir bordes redondeados al marco  */
   }
   
   .slider {
@@ -58,6 +59,7 @@ main {
   .slider img {
     width: 100%;
     display: none;
+    border-radius: 30px;
   }
   
   .prev,
@@ -65,14 +67,14 @@ main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: white;
+    color: #08ac04;
     border: none;
     cursor: pointer;
     padding: 10px;
-    font-size: 18px;
+    font-size: 28px;
     transition: background-color 0.3s;
-    background-color: #09bb03; /* Color de fondo de los botones */
-    border-radius: 40%; /* Hacer los botones redondos */
+    background-color: #ffffff; /* Color de fondo de los botones */
+    border-radius: 20%; /* Hacer los botones redondos */
   }
   
   .prev {
@@ -104,9 +106,5 @@ main {
     background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
-  }
-  
-  .redes-sociales {
-    /* Estilos de los iconos de redes sociales */
   }
   

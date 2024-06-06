@@ -1,4 +1,7 @@
 
+body{
+    font-family: calibri, sans-serif;
+}
 
 header {
     text-align: center;
@@ -38,9 +41,7 @@ nav a {
     max-height: 100%;
 }
 
-.perfil-usuario {
-    /* Estilos para el perfil de usuario */
-}
+
 
 /* Estilos para el contenido principal */
 main {
@@ -60,13 +61,11 @@ section {
     max-width: 100%;
 }
 
+
+
 /* Estilos para el footer */
 footer {
     background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
-}
-  
-.redes-sociales {
-    /* Estilos de los iconos de redes sociales */
 }

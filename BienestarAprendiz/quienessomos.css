@@ -3,7 +3,6 @@ body{
     font-family: calibri, sans-serif;
 }
 
-/* Estilos para el encabezado */
 header {
     text-align: center;
     padding: 5px;
@@ -31,6 +30,12 @@ nav a {
     color: #ffffff;
 }
 
+.logo {
+    height: 80px; /* Ajustar el tamaño del logo según necesites */
+    position: absolute;
+    left: 3%; /* Lo colocará en el lado izquierdo */
+  }
+
 .imagen-equipo {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -55,13 +60,75 @@ section {
 }
 
 /* Estilos para el título de eventos */
-#apoyos h1 {
+#quienes_somos h1 {
     text-align: center;
 }
 
+.video_somos{
+    position: relative;
+    max-width: 560px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 4px solid #09bb03; /* Añadir marco alrededor del slider */
+    border-radius: 10px; /* Añadir bordes redondeados al marco */
+    display: flex;
+}
 
-.imagen-equipo img {
-    max-width: 100%;
+.img_equipo{
+    margin: 0 auto;
+    display: flex;
+    /* border: 3px solid #09bb03;  Añadir marco alrededor del slider  */
+    border-radius: 20px; /* Añadir bordes redondeados al marco */
+    width: 700px;
+    height: 500px;
+}
+
+.informacion{
+    font-size: 20px;
+    font-family: calibri, sans-serif;
+    padding: 20px;
+    text-align: start;
+}
+
+/* ////////////////////// */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+    padding: 5px;
+  }
+  
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #000000;
+    padding: 20px;
+    width: calc(23.33% - 20px);
+    cursor: pointer;
+  }
+  
+.card h2 {
+    margin-top: 0;
+  }
+  
+.info {
+    display: none;
+    margin-top: 10px;
+  }
+  
+.info.show {
+    display: block;
+  }
+
+
+.titulo_b{
+    font-size: 20px
+}
+
+.titulo_t{
+    font-size: 20px;
 }
 
 /* ///////////evento/////////////////// */
@@ -78,7 +145,7 @@ section {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px #00000079;
   }
   
   .evento img {
@@ -94,7 +161,7 @@ section {
   
   .evento p {
     font-size: 14px;
-    color: #666;
+    color: #161313;
     margin-top: 10px; /* Espacio entre el botón y el texto */
   }
   
@@ -110,8 +177,8 @@ section {
   .evento button:hover {
     background-color: #066d03;
   }
-
   
+
 /* Estilos para el footer */
 footer {
     background-color: #f8f9fa;

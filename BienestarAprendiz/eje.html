@@ -1,1 +1,28 @@
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k5rZk-qC0JM?si=2AO7GjjUvpd2lW2e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles del Evento</title>
+</head>
+<body>
+  <header>
+    <h1>Detalles del Evento</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <form action="eje.html" method="get">
+        <label for="id_evento">ID del Evento:</label>
+        <input type="text" id="id_evento" name="id" required>
+        <button type="submit">Ver Detalles</button>
+      </form>
+      <?php include 'eje.php'; ?>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Tu Empresa</p>
+  </footer>
+</body>
+</html>

@@ -63,12 +63,6 @@ CREATE TABLE `formulario_apoyo` (
   `id_tipo_documento` varchar(45) DEFAULT NULL,
   `num_documento` varchar(45) DEFAULT NULL,
   `correo` varchar(45) DEFAULT NULL,
-  `f_firma_acudiente` varchar(45) DEFAULT NULL,
-  `f_firma_digital` varchar(45) DEFAULT NULL,
-  `f_documento_identidad` varchar(45) DEFAULT NULL,
-  `f_sisben` varchar(45) DEFAULT NULL,
-  `f_soportes_vulnerables` varchar(45) DEFAULT NULL,
-  `f_factura_servicio_publico` varchar(45) DEFAULT NULL,
   `id_clasificacion_evento` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_formulario_apoyo`)
 );

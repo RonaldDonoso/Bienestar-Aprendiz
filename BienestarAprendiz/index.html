@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+      <img class="logo" src="img/logo1.png" alt="Logo">
+      <h1>Bienestar al Aprendiz</h1>
+  </header>
+  <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="apoyos/apoyos.html">Apoyos</a>
+      <a href="eventos/evento.php">Eventos</a>
+      <a href="quienessomos.html">Quienes Somos</a>
+  </nav>
+
+  <main>
+      <section id="eventos">          
+          <!-- Primer Slider -->
+          <div class="slider-container">
+              <div class="slider">
+                  <img src="img/evento1.jpg" alt="Image 1">
+                  <img src="img/evento2.png" alt="Image 2">
+                  <img src="img/evento3.jpg" alt="Image 3">
+              </div>
+              <button class="prev" onclick="prevSlide()">&#10094;</button>
+              <button class="next" onclick="nextSlide()">&#10095;</button>
+          </div>
+        </main>
+
+<h1 style="text-align: center;">Apoyos Vigentes</h1>
+
+<!-- Segundo Slider -->
+        
+          <div class="slider2">
+              <div class="slide"><img src="img/evento3.jpg" alt="Imagen 1"></div>
+              <div class="slide"><img src="img/evento1.jpg" alt="Imagen 2"></div>
+              <div class="slide"><img src="img/evento3.jpg" alt="Imagen 3"></div>
+              <div class="slide"><img src="img/evento2.png" alt="Imagen 4"></div>
+              <div class="slide"><img src="img/evento3.jpg" alt="Imagen 3"></div>
+              <div class="slide"><img src="img/evento2.png" alt="Imagen 4"></div>
+              <!-- Agrega más imágenes aquí si lo deseas -->
+          </div>
+
+<h1 style="text-align: center;">Eventos En Curso</h1>
+
+<div class="eventos-container">
+    <!-- Primer Bloque - Evento 1 -->
+    <div class="evento">
+        <img src="img/evento1.jpg" alt="Evento 1">
+        <h2>Evento 1</h2>
+        <button class="details-btn">Detalles</button>
+        <p class="evento-info" style="display: none;">Aquí está el texto detallado del evento 1.</p>
+    </div>
+
+    <!-- Segundo Bloque - Evento 2 -->
+    <div class="evento">
+        <img src="img/evento2.png" alt="Evento 2">
+        <h2>Evento 2</h2>
+        <button class="details-btn">Detalles</button>
+        <p class="evento-info" style="display: none;">Aquí está el texto detallado del evento 2.</p>
+    </div>
+    
+</div>
+
+<h1 style="text-align: center;">Servicios</h1>
+
+<!-- Servicios -->
+
+<div class="container">
+    <div class="card" onclick="showInfo(1)">
+        <img src="img/somos_1.png" alt="Imagen Objetivos">
+        <h2 class="titulo_t">Objetivos Plan de Bienestar al Aprendiz</h2>
+        <div class="info" id="info1"> <h1 class="titulo_b">Objetivo estratégico 1</h1>
+            Implementar estrategias de acompañamiento para el desarrollo integral del aprendiz en su proceso formativo.
+            
+            <h1 class="titulo_b">Objetivo estratégico 2</h1>
+            Incentivar al aprendiz en su proceso de formación profesional integral mediante la implementación de un programa de estímulos.
+            
+            <h1 class="titulo_b">Objetivo estratégico 3</h1>
+            Entregar con oportunidad y calidad los servicios de bienestar al aprendiz documentando procedimientos que soporten una operación ágil y flexible.</div>
+        </div>
+    <div class="card" onclick="showInfo(2)">
+        <img src="img/somos_2.png" alt="Imagen Desarrollo Integral">
+        <h2 class="titulo_t">Desarrollo integral del aprendiz</h2>
+        <div class="info" id="info2"> <strong>Son acciones de acompañamiento a los aprendices en temas relacionados con:</strong>
+            cultura, a las prácticas de prevención de la enfermedad y promoción de la salud, 
+            al desarrollo de habilidades blandas, al deporte, la actividad física, el aprovechamiento del tiempo libre 
+            y el arte.</div>
+        </div>
+    <div class="card" onclick="showInfo(3)">
+        <img src="img/somos_3.png" alt="Imagen Estrategias">
+        <h2>Programa de estímulos</h2>
+        <div class="info" id="info3"><strong>Son estrategias para el reconocimiento al esfuerzo en el proceso formativo</strong> 
+            y un impulso para la excelencia generando escenarios de reconocimiento para aprendices 
+            en ejes de liderazgo, proyección social, formación y de talentos. Los apoyos socioeconómicos son: 
+            apoyo regular, FIC, alimentación, transporte, plan de datos, monitorias y centros de convivencia</div>
+        </div>
+    <div class="card" onclick="showInfo(4)">
+        <img src="img/somos_4.png" alt="Imagen Acceder al plan">
+        <h2 class="titulo_t">¿Quiénes pueden acceder al Plan de Bienestar al Aprendiz?</h2>
+        <div class="info" id="info4"> <strong>Aprendices matriculados en formación Laboral y Formación tecnológica</strong>, 
+            de todos los niveles y jornadas, en sus diferentes modalidades: presencial, virtual o a distancia.
+            Los Centros de Formación Profesional Integral incorporarán estrategias para la inclusión de aprendices 
+            pertenecientes a las comunidades minoritarias y vulnerables</div>
+        </div>
+    <div class="card" onclick="showInfo(5)">
+        <img src="img/somos_5.png" alt="Imagen Acceder Servicios">
+        <h2 class="titulo_t">¿Cómo acceder a los servicios del plan de bienestar al aprendiz en tu centro de formación?</h2>
+        <div class="info" id="info5">Los aprendices pueden <strong>consultar en los centros de formación directamente</strong> 
+            con los profesionales de bienestar al aprendiz.</div>
+        </div>
+    <div class="card" onclick="showInfo(6)">
+        <img src="img/somos_6.png" alt="Imagen Beneficios">
+        <h2 class="titulo_t">¿Qué beneficios ofrece el Plan de Bienestar al Aprendiz?</h2>
+        <div class="info" id="info6">
+            <strong>Consolida</strong> proyectos de vida. <br>
+            <strong>Motiva</strong> la culminación exitosa del proceso formativo. <br>
+            <strong>Promueve</strong> hábitos de vida saludables. <br>
+            <strong>Fortalece</strong> las habilidades blandas de los aprendices. <br>
+        </div>
+        </div>
+</div> 
+
+
+  <footer>
+      <div class="redes-sociales">
+          <a href="#"><img src="img/facebook2.png" alt="Facebook" width="40px" height="40px"></a>
+          <a href="#"><img src="img/twitter2.png" alt="Twitter" width="40px" height="40px"></a>
+          <a href="https://www.instagram.com/bienestar_cditi/"><img src="img/instagram2.png" alt="Instagram" width="40px" height="40px"></a>
+      </div>
+      <p> © 2024 Bienestar al Aprendiz</p>
+  </footer>
+
+</body>
+</html>
+
+<script src="index.js"></script>

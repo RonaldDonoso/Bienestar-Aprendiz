@@ -1,0 +1,223 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-top: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+.mensaje {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.mensaje.success {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.mensaje.error {
+    background-color: #f44336;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para botones */
+.btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #0056b3;
+}
+
+.btn-agregar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-agregar:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para las acciones en las tablas */
+table .acciones {
+    display: flex;
+    gap: 10px;
+}
+
+table .acciones form {
+    display: inline;
+}
+
+table .acciones input[type="submit"] {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+table .acciones input[type="submit"]:hover {
+    background-color: #c82333;
+}
+
+table .acciones input[type="submit"][name^="editar"] {
+    background-color: #007bff;
+}
+
+table .acciones input[type="submit"][name^="editar"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el botón Seleccionar */
+a.seleccionar-evento {
+    height: 30px;
+    display: inline-block;
+    padding: 2px 10px; /* Ajusta el relleno según sea necesario */
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    text-align: center; /* Alinea el texto al centro */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border: none; /* Elimina el borde si lo deseas */
+}
+
+a.seleccionar-evento:hover {
+    background-color: #218838;
+}
+
+

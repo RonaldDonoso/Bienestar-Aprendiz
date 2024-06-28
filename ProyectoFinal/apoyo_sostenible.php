@@ -4,6 +4,7 @@ session_start();
 // Incluir el archivo de conexión a la base de datos
 require_once "includes/db_connection.php";
 
+
 // Inicializar variables para evitar errores de "Undefined variable"
 $nombre_apoyo = '';
 $primer_nombre = '';
@@ -100,11 +101,7 @@ $conn->close();
                 if(isset($_SESSION['id_usuario'])) {
                     $rol_usuario = $_SESSION['id_rol'];
                     
-                    if($rol_usuario == 1) {
-                        echo '<li><a href="admin.php">Panel de Administración</a></li>';
-                    } else {
-                        echo '<li><a href="perfil.php">Mi Perfil</a></li>';
-                    }
+                    if($rol_usuario == 1) { echo '<li><a href="admin.php">Panel de Administración</a></li>';} 
 
                     echo '<li><a href="logout.php">Cerrar Sesión</a></li>';
                 } else {

@@ -4,13 +4,6 @@ session_start();
 // Incluir el archivo de conexión a la base de datos
 require_once "includes/db_connection.php";
 
-// Verificar si el usuario tiene permisos de administrador (rol 1)
-if (!isset($_SESSION['id_usuario']) || $_SESSION['id_rol'] != 1) {
-    // Si no es administrador, redireccionar a otra página o mostrar un mensaje de error
-    header('Location: index.php'); // Cambiar a la página adecuada si no es administrador
-    exit();
-}
-
 // Inicializar variables para evitar errores de "Undefined variable"
 $nombre_apoyo = '';
 $primer_nombre = '';

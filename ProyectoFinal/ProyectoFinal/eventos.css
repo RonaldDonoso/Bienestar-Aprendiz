@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-volver:hover {
+    background-color: #0056b3;
+}
+
+.evento {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.evento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.evento h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.evento p {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.evento .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #777777;
+}
+
+.evento .info .fecha {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .evento {
+        padding: 15px;
+    }
+
+    .evento h2 {
+        font-size: 20px;
+    }
+
+    .evento p {
+        font-size: 14px;
+    }
+}
+.evento-img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.logo-header {
+    width: 168px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}

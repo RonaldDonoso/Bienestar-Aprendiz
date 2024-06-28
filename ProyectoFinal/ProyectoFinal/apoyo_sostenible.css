@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+h2 {
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; 
+}
+
+footer p {
+    margin: 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form select,
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form .btn-agregar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form .btn-agregar:hover {
+    background-color: #45a049;
+}
+
+.mensaje {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.error {
+    color: #f44336;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.slider2 {
+    max-width: 100%;
+    margin: 20px auto; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    width: 100%;
+  }
+  
+  .slide {
+    display: inline-block; 
+    width: calc(33.33% - 10px); 
+    margin-right: 10px; 
+  }
+  
+  .slide img {
+    width: 100%; 
+    height: auto;
+    border-radius: 7px;
+
+  }
+
+  .logo-header {
+    width: 168px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}

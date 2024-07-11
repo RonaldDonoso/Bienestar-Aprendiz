@@ -88,7 +88,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Citas</title>
-    <link rel="stylesheet" href="apoyo_sostenible.css">
+    <link rel="stylesheet" href="apoyo/apoyo_sostenible.css">
 </head>
 <body>
     <header>
@@ -148,7 +148,7 @@ $conn->close();
             </select>
             <br><br>
             <label for="numero_documento">Número de Documento:</label>
-            <input type="text" id="numero_documento" name="numero_documento" value="<?php echo htmlspecialchars($numero_documento); ?>" required>
+            <input type="number" id="numero_documento" name="numero_documento" value="<?php echo htmlspecialchars($numero_documento); ?>" required>
             <br><br>
             <label for="correo">Correo Electrónico:</label>
             <input type="email" id="correo" name="correo" value="<?php echo htmlspecialchars($correo); ?>" required>
@@ -157,7 +157,7 @@ $conn->close();
             <input type="tel" id="telefono" name="telefono" value="<?php echo htmlspecialchars($telefono); ?>" required>
             <br><br>
             <label for="num_ficha">Número de Ficha:</label>
-            <input type="text" id="num_ficha" name="num_ficha" value="<?php echo htmlspecialchars($num_ficha); ?>" required>
+            <input type="number" id="num_ficha" name="num_ficha" value="<?php echo htmlspecialchars($num_ficha); ?>" required>
             <br><br>
             <label for="asunto">Asunto:</label>
             <input type="text" id="asunto" name="asunto" value="<?php echo htmlspecialchars($asunto); ?>" required>

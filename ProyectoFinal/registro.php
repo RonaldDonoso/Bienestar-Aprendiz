@@ -68,10 +68,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             </select>
             <br><br>
             <label for="numero_documento">Número de Documento:</label>
-            <input type="text" id="numero_documento" name="numero_documento" required>
+            <input type="number" id="numero_documento" name="numero_documento" required>
             <br><br>
             <label for="telefono">Teléfono:</label>
-            <input type="text" id="telefono" name="telefono" required>
+            <input type="tel" id="telefono" name="telefono" required>
             <br><br>
             <label for="correo">Correo Electrónico:</label>
             <input type="email" id="correo" name="correo" required>
